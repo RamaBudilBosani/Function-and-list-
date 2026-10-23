@@ -1,0 +1,12 @@
+numbers = [1, 2, 3]
+
+def tricky(nums):
+    nums.append(4)          # adds 4 to the original list
+    nums = [10, 20]            # here, it creates a new list and stores these values in it
+    nums.append(30)       # 30 is added to the new list
+    return nums
+
+result = tricky(numbers)  # the new list is stored in result 
+
+print(numbers)
+print(result)
